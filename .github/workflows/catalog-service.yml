@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest  # ✅ Corrected this
+    runs-on: ubuntu-latest
     env:
       working-directory: ./catalog-service
 
@@ -18,7 +18,7 @@ jobs:
       run:
         working-directory: ${{ env.working-directory }}
 
-    steps:  # ✅ Moved this outside of `defaults`
+    steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
