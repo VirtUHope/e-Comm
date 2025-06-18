@@ -13,14 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     env:
       working-directory: ./catalog-service
-
     defaults:
       run:
         working-directory: ${{ env.working-directory }}
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Setup Java 21
         uses: actions/setup-java@v4
