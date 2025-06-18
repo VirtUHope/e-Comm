@@ -1,4 +1,4 @@
-# .github/workflows/catalog-service.yml
+#  .github/workflows/catalog-service.yml
 name: Build Catalog Service
 
 on:
