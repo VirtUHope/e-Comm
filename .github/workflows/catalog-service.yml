@@ -1,4 +1,4 @@
-#  .github/workflows/catalog-service.yml
+# .github/workflows/catalog-service.yml
 name: Build Catalog Service
 
 on:
@@ -15,7 +15,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: catalog-service
+        working-directory: ./catalog-service
 
     steps:
       - uses: actions/checkout@v4
